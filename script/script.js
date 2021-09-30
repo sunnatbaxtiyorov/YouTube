@@ -54,6 +54,7 @@ function openBurger(){
     }
 
     y.style.display = "block";
+
 }
 
 function closeBurger(){
@@ -169,3 +170,8 @@ window.onclick = function(event) {
   }
 
 
+// if(screen.width <= 1520){
+//     const container = document.querySelector(".container");
+//     container.style.maxWidth = "1280";
+//     container.style.transform = "translate(0px,0px)";
+// }

@@ -686,9 +686,18 @@ body{
 @media only screen and (max-width:1520px) {
     .aside{
         display: none;
+
+        .menu{
+            display: none;
+
+        }
     }
     .mini-menu{
-        display: block;
+        display: none;
+    }
+
+    .categories{
+        margin-left: 0px;
     }
 
     .video{
@@ -696,10 +705,11 @@ body{
     }
 
     .container{
-        transform: translate(26px, 0px);
+        transform: translate(0px, 0px);
     }
     .logo-hidden{
         display: block;
+        left: 0px;
     }
 
    
@@ -739,10 +749,6 @@ body{
         max-width: 300px;
     }
 
-    .logo-hidden{
-       
-        left: 4.5%;
-    }
 
     .top{
         .search-group{
@@ -760,6 +766,10 @@ body{
         .tab{
             display: none;
         }
+
+    .aside{
+        display: block;
+    }
     }
 
     .categories{
@@ -826,9 +836,13 @@ body{
 }
 
 @media only screen and (max-width:780px){
+    .avatar{
+        display: none;
+    }
 
+    
     .top{
-
+        justify-content: flex-end;
         .hidden{
             width: 75px;
         }
@@ -855,7 +869,6 @@ body{
     }
 
     .logo-hidden{
-        left: 6.5%;
         top: -7%;
     }
 
@@ -900,7 +913,9 @@ body{
         display: none;
     }
     
-
+    .main{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .top{
         padding: 10px 20px;
     }
@@ -913,21 +928,57 @@ body{
 
 }
 
-// @media only screen and (max-width:580px){
-//     .mini-menu{
-//         .aside-top{
-//             padding: 16px 5px 12px;
-//         }
-//     }
+@media only screen and (max-width:580px){
+    .mini-menu{
+        .aside-top{
+            padding: 16px 5px 12px;
+        }
+    }
 
-//     .video{
+   
 
-//         &__owner{
-//             width: 20px;
-//         }
-//     }
+    .video{
 
-//     .description{
-//         font-size: 10px;
-//     }
-// }
+        &__owner{
+            width: 20px;
+        }
+    }
+
+    .description{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:484px){
+    .main{
+        grid-template-columns: 1fr;
+        margin-top: 190px;
+    }
+
+    .video{
+        max-width: 444px;
+
+        &__owner{
+            width: 35px;
+        }
+    }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .viewed ,.upload-date , .nickname{
+        font-size: 14px;
+    }
+
+    .top{
+        .search-group{
+            .input{
+                .search-area{
+                    width: 120px;
+                }
+            }
+        }
+    }
+
+}
