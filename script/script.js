@@ -141,7 +141,6 @@ function avatarOpen(){
     open.style.display = "none";
     content.style.display = "block";
     addEventListener("click",createVideoClose(),appClose(),notificationsClose());
-
     close.style.display = "block";
 }
 
@@ -174,4 +173,4 @@ window.onclick = function(event) {
 //     const container = document.querySelector(".container");
 //     container.style.maxWidth = "1280";
 //     container.style.transform = "translate(0px,0px)";
-// }
+// 
